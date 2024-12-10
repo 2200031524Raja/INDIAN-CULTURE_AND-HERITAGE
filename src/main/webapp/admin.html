@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Indian Heritage</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #FF8C00, #FF4500);
+            color: #fff;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #FF8C00;
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        main h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #222;
+        }
+
+        main p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .admin-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .option {
+            background: white;
+            color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .option h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .option p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+        /* Heritage Section */
+        .heritage-section {
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .heritage-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #FF8C00;
+        }
+
+        .heritage-item {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        Admin Dashboard - Celebrating Indian Heritage
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="viewContact.jsp">View Reports</a>
+        <a href="culturalManagement.jsp">Manage Heritage</a>
+        <a href="index.jsp">Logout</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Welcome, Admin!</h1>
+        <p>
+            Use the options below to manage the website, explore India's cultural heritage, and customize content.
+        </p>
+
+        <div class="admin-options">
+            <div class="option">
+                <h2>View Reports</h2>
+                <p>Access detailed reports on website activity.</p>
+            </div>
+
+            <div class="option">
+                <h2>Manage Heritage</h2>
+                <p>Add or update information on India's cultural treasures.</p>
+            </div>
+
+            <div class="option">
+                <h2>Logout</h2>
+                <p>Sign out of the admin dashboard securely.</p>
+            </div>
+        </div>
+
+        <!-- Indian Heritage Section -->
+        <div class="heritage-section">
+            <h2>Explore Indian Heritage</h2>
+            <div class="heritage-item">
+                <strong>Art & Architecture:</strong> Marvel at India's rich architectural wonders, from the Taj Mahal to the Ajanta and Ellora caves.
+            </div>
+            <div class="heritage-item">
+                <strong>Festivals:</strong> Celebrate the diversity with festivals like Diwali, Holi, Navratri, and Eid.
+            </div>
+            <div class="heritage-item">
+                <strong>Cuisine:</strong> Discover flavors from every corner of India, from spicy curries to sweet desserts like gulab jamun.
+            </div>
+            <div class="heritage-item">
+                <strong>Traditional Attire:</strong> Admire vibrant saris, intricate lehengas, and majestic sherwanis symbolizing India's culture.
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Indian Heritage & Culture | Admin Panel
+    </footer>
+
+</body>
+</html>

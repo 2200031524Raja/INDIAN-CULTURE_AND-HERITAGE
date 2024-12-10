@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Indian heritage, including monuments, festivals, cuisines, and cultural traditions.">
+    <title>Explore Indian Heritage</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Library for Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+            url('https://upload.wikimedia.org/wikipedia/commons/3/3e/India_collage.jpg') no-repeat center center/cover;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        .section {
+            padding: 3em 0;
+        }
+        .section h2 {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .parallax {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/a/a4/Konark_Sun_Temple.jpg') no-repeat center center/cover;
+            height: 300px;
+            position: relative;
+            background-attachment: fixed;
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header>
+         <div>
+        <h1 data-aos="fade-up">Discover India's Rich Heritage</h1>
+        <p data-aos="fade-up" data-aos-delay="200">Dive into the timeless culture, monuments, festivals, and cuisines of India.</p>
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="searchForm">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="searchInput" placeholder="Search Indian heritage...">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button" id="searchButton">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <!-- Section: Monuments -->
+    <div class="section bg-white" id="monuments">
+        <h2 data-aos="fade-up">Historical Monuments</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Taj Mahal</h5>
+                            <p class="card-text">The Taj Mahal, located in Agra, India, is a UNESCO World Heritage Site and an enduring symbol of love, built by Mughal Emperor Shah Jahan in 1632 in memory of his wife, Mumtaz Mahal. This magnificent white marble mausoleum, completed in 1648, is renowned for its intricate inlay work with semi-precious stones, symmetrical design, and lush Mughal gardens with a reflecting pool that enhances its ethereal beauty. Known for its ability to change colors throughout the day—from pink at dawn to golden-white at noon and silvery blue under moonlight—it captivates millions of visitors annually. A masterpiece of Indo-Islamic architecture, the Taj Mahal remains a timeless treasure and a must-visit destination for anyone exploring India's rich heritage.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <img src="images/qutab.webp" class="card-img-top" alt="Qutub Minar">
+                        <div class="card-body">
+                            <h5 class="card-title">Qutub Minar</h5>
+                            <p class="card-text">The Qutub Minar, located in Delhi, India, is a UNESCO World Heritage Site and one of the tallest brick minarets in the world, standing at a height of 73 meters. Built in 1192 by Qutb-ud-din Aibak, the founder of the Delhi Sultanate, and completed by his successors, it is a striking example of Indo-Islamic architecture. Constructed using red sandstone and marble, the minaret is adorned with intricate carvings and verses from the Quran. Surrounding the minar are historical structures, including the Quwwat-ul-Islam Mosque—the first mosque in India—and the Iron Pillar, known for its rust-resistant composition. The Qutub Minar stands as a symbol of India's rich cultural and architectural legacy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card">
+                        <img src="images/Hampi.webp" class="card-img-top" alt="Hampi">
+                        <div class="card-body">
+                            <h5 class="card-title">Hampi</h5>
+                            <p class="card-text">Hampi, located in Karnataka, India, is a UNESCO World Heritage Site and the former capital of the Vijayanagara Empire, renowned for its stunning ruins and rich history. Set amidst a surreal landscape of giant boulders and lush greenery, Hampi features exquisite temples, intricate carvings, and ancient market streets that reflect the grandeur of one of South India's most powerful empires. Notable landmarks include the Virupaksha Temple, the Vittala Temple with its iconic stone chariot, and the Lotus Mahal, a fine example of Indo-Islamic architecture. Once a bustling trade hub, Hampi is now a treasure trove for historians, architects, and travelers, offering a glimpse into a glorious past steeped in art, culture, and heritage.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card">
+                        <img src="images/mysore.webp" class="card-img-top" alt="Hampi">
+                        <div class="card-body">
+                            <h5 class="card-title">Mysore</h5>
+                            <p class="card-text">Mysore, located in Karnataka, India, is a city steeped in history, culture, and architectural splendor, often referred to as the "Cultural Capital of Karnataka." Famous for its magnificent Mysore Palace, a masterpiece of Indo-Saracenic architecture, the city exudes royal grandeur and elegance. Mysore is also renowned for the annual Dasara Festival, a ten-day celebration featuring grand processions, traditional performances, and illuminated palaces. Other notable attractions include the Chamundi Hills with its revered temple, the Brindavan Gardens with its vibrant musical fountains, and the Mysore Zoo, one of the oldest in India. Known for its rich heritage, silk sarees, and aromatic sandalwood products, Mysore is a vibrant blend of tradition and modernity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card">
+                        <img src="images/kerala.webp" class="card-img-top" alt="Hampi">
+                        <div class="card-body">
+                            <h5 class="card-title">Kerala</h5>
+                            <p class="card-text">Kerala, located on the southwestern coast of India, is a stunning state known for its lush landscapes, tranquil backwaters, and rich cultural heritage. Often referred to as "God's Own Country," Kerala is famous for its serene beaches, misty hill stations, and abundant wildlife. The state boasts a unique cultural blend, with influences from Hindu, Christian, and Muslim traditions, evident in its festivals, art forms like Kathakali and Mohiniyattam, and the famous Onam festival. Kerala is also known for its traditional ayurvedic treatments, spicy cuisine (especially seafood and coconut-based dishes), and vibrant houseboat cruises along the backwaters. Cities like Kochi and Thiruvananthapuram offer a mix of history, art, and modern living, while its pristine natural beauty makes it a paradise for tourists and nature lovers alike.
+
+
+
+
+
+
+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card">
+                        <img src="images/charminar.webp" class="card-img-top" alt="Hampi">
+                        <div class="card-body">
+                            <h5 class="card-title">Charminar</h5>
+                            <p class="card-text">Charminar, located in the heart of Hyderabad, Telangana, is an iconic symbol of India's rich architectural heritage. Built in 1591 by Sultan Muhammad Quli Qutb Shah, the monument was constructed to commemorate the founding of the city and to mark the end of a deadly plague. The Charminar is an impressive square structure with four grand arches, each facing a major road, and topped with a large dome. It stands at 56 meters tall and is adorned with intricate Islamic architecture, featuring motifs of the Mughal, Persian, and Indo-Saracenic styles. The monument is a bustling hub, surrounded by markets such as the famous Laad Bazaar, known for its traditional bangles and local crafts. The Charminar is not only a historical and architectural marvel but also a cultural and spiritual landmark, with the nearby Macca Masjid adding to its significance. It remains a vibrant symbol of Hyderabad's cultural heritage.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card">
+                        <img src="images/bakta.webp" class="card-img-top" alt="Hampi">
+                        <div class="card-body">
+                            <h5 class="card-title">Bhimbetka</h5>
+                            <p class="card-text">The rock shelters of Bhimbetka are known for the rock paintings and Natural rock shelters which reflect the stone age. This place was declared as a heritage place by UNESCO in 2003, the rock shelters in Bhimbetka gave the first traces of human life in Indian subcontinent. Resting at the foothills of the Vindhya Mountains, this place is located at the Deccan Plateau. Considered from the Mesolithic period, this place gives a hint of the South Asian Stone Age. These rocks were discovered in the year of 1957.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card">
+                    <img src="images/konark.webp" class="card-img-top" alt="Konark Sun Temple">
+                    <div class="card-body">
+                        <h5 class="card-title">Konark Sun Temple</h5>
+                        <p class="card-text">The Konark Sun Temple, located in Odisha, India, is a UNESCO World Heritage Site and an architectural marvel dedicated to the Sun God. Built in the 13th century by King Narasimhadeva I, the temple is designed in the shape of a colossal chariot with intricately carved stone wheels, horses, and walls. Known for its intricate sculptures depicting deities, musicians, dancers, and daily life, it stands as a testament to India's ancient artistry and devotion. The temple, once a grand structure, now stands in ruins but continues to attract visitors with its aura of mysticism and history.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card">
+                    <img src="images/ellora.webp" class="card-img-top" alt="Ellora Caves">
+                    <div class="card-body">
+                        <h5 class="card-title">Ellora Caves</h5>
+                        <p class="card-text">Ellora Caves, located in Maharashtra, India, is a UNESCO World Heritage Site known for its magnificent rock-cut temples and monasteries. Built between the 6th and 10th centuries, the site features 34 caves dedicated to Hindu, Buddhist, and Jain traditions. The highlight is the Kailasa Temple, an awe-inspiring monolithic structure dedicated to Lord Shiva, carved out of a single rock. Ellora Caves showcase India's extraordinary ancient engineering and artistic prowess, making it a must-visit for history and art enthusiasts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card">
+                    <img src="images/amer.webp" class="card-img-top" alt="Amer Fort">
+                    <div class="card-body">
+                        <h5 class="card-title">Amer Fort</h5>
+                        <p class="card-text">Amer Fort, located near Jaipur in Rajasthan, India, is a majestic fort known for its stunning blend of Hindu and Mughal architecture. Constructed in the 16th century by Raja Man Singh, the fort is made of red sandstone and marble. Its attractions include the Sheesh Mahal (Mirror Palace), Diwan-e-Aam (Hall of Public Audience), and intricate frescoes and carvings. The fort overlooks Maota Lake and offers breathtaking views of the surrounding hills, making it a popular tourist destination and a symbol of Rajasthan's royal heritage.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card">
+                    <img src="images/ajanta.webp" class="card-img-top" alt="Ajanta Caves">
+                    <div class="card-body">
+                        <h5 class="card-title">Ajanta Caves</h5>
+                        <p class="card-text">Ajanta Caves, located in Maharashtra, India, is a UNESCO World Heritage Site renowned for its exquisite rock-cut Buddhist monasteries and temples dating back to the 2nd century BCE. The 29 caves feature intricately painted murals and sculptures that narrate the life of Buddha and Jataka tales. The caves stand as a symbol of India's ancient artistry and devotion, attracting historians and art lovers from across the world.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card">
+                    <img src="images/khajuraho.webp" class="card-img-top" alt="Khajuraho Temples">
+                    <div class="card-body">
+                        <h5 class="card-title">Khajuraho Temples</h5>
+                        <p class="card-text">The Khajuraho Group of Monuments, located in Madhya Pradesh, India, is a UNESCO World Heritage Site famous for its stunning medieval Hindu and Jain temples adorned with intricate carvings and sculptures. Built between 950 and 1050 CE by the Chandela dynasty, these temples are known for their detailed depictions of gods, celestial beings, and everyday life, including some that celebrate love and passion. The Khajuraho Temples are an enduring testament to India's architectural brilliance and cultural heritage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <!-- Parallax Section -->
+    <div class="parallax"></div>
+
+    <!-- Section: Cuisines -->
+    <div class="section bg-light" id="cuisines">
+        <h2 data-aos="fade-up">Rich Indian Cuisines</h2>
+        <div class="container">
+            <p data-aos="fade-up" class="text-center">Explore the flavors of India, from spicy curries to delicious sweets.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Explore Indian Heritage. All rights reserved.</p>
+    </footer>
+
+    <!-- jQuery and Bootstrap Bundle -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        document.getElementById('searchButton').addEventListener('click', function () {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.card');
+            let foundMatch = false;
+
+            cards.forEach(card => {
+                const cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
+                const cardText = card.querySelector('.card-text').textContent.toLowerCase();
+
+                if (cardTitle.includes(query) || cardText.includes(query)) {
+                    card.closest('.col-md-4').style.display = 'block'; // Show matching card
+                    foundMatch = true;
+                } else {
+                    card.closest('.col-md-4').style.display = 'none'; // Hide non-matching card
+                }
+            });
+
+            if (!foundMatch) {
+                alert(`No results found for "${query}". Please try a different search.`);
+            }
+        });
+
+        document.getElementById('searchInput').addEventListener('keyup', function (event) {
+            if (event.key === 'Enter') {
+                document.getElementById('searchButton').click();
+            }
+        });
+    </script>
+</body>
+</html>

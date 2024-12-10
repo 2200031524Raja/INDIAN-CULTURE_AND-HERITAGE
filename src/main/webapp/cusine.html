@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cuisines</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-image: url('https://via.placeholder.com/1600x500?text=Indian+Cuisine');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+            position: relative;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        header h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+        }
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2.5em;
+            color: #333;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .cuisine-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .cuisine-list li {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        .cuisine-list li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .cuisine-list img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .cuisine-list h3 {
+            font-size: 1.5em;
+            color: #4CAF50;
+            margin-top: 15px;
+        }
+        .cuisine-list p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .north h2, .south h2 {
+            color: #e74c3c;
+        }
+        .search-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .search-container input {
+            padding: 10px;
+            font-size: 1.1em;
+            width: 80%;
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Indian Cuisines</h1>
+    <p>Explore the delicious culinary heritage of North and South India</p>
+</header>
+
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search for cuisines..." onkeyup="filterCuisines()">
+</div>
+
+<section class="north">
+    <h2>North Indian Cuisine</h2>
+    <ul class="cuisine-list" id="northCuisines">
+        <li>
+            <img src="CuisineImages/NorhBiryani.webp" alt="Biryani">
+            <h3>Biryani</h3>
+            <p>Aromatic rice dish cooked with spices, meat, and herbs.</p>
+        </li>
+        <li>
+            <img src="CuisineImages/roganjosh.webp" alt="Rogan Josh">
+            <h3>Rogan Josh</h3>
+            <p>A rich and flavorful Kashmiri lamb curry.</p>
+        </li>
+        <li>
+            <img src="CuisineImages/ButterC.webp" alt="Butter Chicken">
+            <h3>Butter Chicken</h3>
+            <p>Delicious creamy chicken curry with a buttery flavor.</p>
+        </li>
+        <li>
+            <img src="CuisineImages/panner.webp" alt="Paneer Tikka">
+            <h3>Paneer Tikka</h3>
+            <p>Grilled cottage cheese marinated in spiced yogurt.</p>
+        </li>
+        <li>
+            <img src="CuisineImages/cholebathure.webp" alt="Chole Bhature">
+            <h3>Chole Bhature</h3>
+            <p>Spicy chickpea curry served with deep-fried bread.</p>
+        </li>
+        <li>
+            <img src="CuisineImages/dalmakkan.webp" alt="Dal Makhani">
+            <h3>Dal Makhani</h3>
+            <p>A creamy lentil curry that’s a staple in North India.</p>
+        </li>
+    </ul>
+</section>
+
+<section class="south">
+    <h2>South Indian Cuisine</h2>
+    <ul class="cuisine-list" id="southCuisines">
+        <li>
+            <img src="CuisineImages/dosa.webp" alt="Dosa">
+            <h3>Dosa</h3>
+            <p>Crispy rice pancake filled with spiced potatoes.</p>
+        </li>
+        <li>
+            <img src="CuisineImages/idli.webp" alt="Idli">
+            <h3>Idli</h3>
+            <p>Steamed rice cakes often served with chutney.</p>
+        </li>
+        <li>
+            <img src="CuisineImages/vada.webp" alt="Vada">
+            <h3>Vada</h3>
+            <p>Fried lentil doughnut-like snacks served with sambar.</p>
+        </li>
+        <li>
+            <img src="CuisineImages/sambar.webp" alt="Sambar">
+            <h3>Sambar</h3>
+            <p>A spicy and tangy lentil soup typically paired with dosa.</p>
+        </li>
+        <li>
+            <img src="CuisineImages/HyBir.webp" alt="Hyderabadi Biryani">
+            <h3>Hyderabadi Biryani</h3>
+            <p>A fragrant rice dish made with marinated meat and spices.</p>
+        </li>
+        <li>
+            <img src="CuisineImages/chi.webp" alt="Chettinad Chicken Curry">
+            <h3>Chettinad Chicken Curry</h3>
+            <p>A flavorful and spicy curry from Tamil Nadu.</p>
+        </li>
+    </ul>
+</section>
+
+<script>
+    function filterCuisines() {
+        let searchInput = document.getElementById('searchInput').value.toLowerCase();
+        let northCuisines = document.getElementById('northCuisines').getElementsByTagName('li');
+        let southCuisines = document.getElementById('southCuisines').getElementsByTagName('li');
+
+        // Filter North Indian Cuisines
+        for (let i = 0; i < northCuisines.length; i++) {
+            let cuisineName = northCuisines[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+            if (cuisineName.includes(searchInput)) {
+                northCuisines[i].style.display = "";
+            } else {
+                northCuisines[i].style.display = "none";
+            }
+        }
+
+        // Filter South Indian Cuisines
+        for (let i = 0; i < southCuisines.length; i++) {
+            let cuisineName = southCuisines[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+            if (cuisineName.includes(searchInput)) {
+                southCuisines[i].style.display = "";
+            } else {
+                southCuisines[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
